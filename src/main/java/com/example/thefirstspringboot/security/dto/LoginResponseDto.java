@@ -1,4 +1,4 @@
-package com.example.thefirstspringboot.auth.dto;
+package com.example.thefirstspringboot.security.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;

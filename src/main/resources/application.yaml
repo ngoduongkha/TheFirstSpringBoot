@@ -6,12 +6,11 @@ spring:
         driver-class-name: org.postgresql.Driver
     jpa:
         hibernate:
-            ddl-auto: update
+            ddl-auto: create-drop
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
-application:
-    security:
-        jwt:
-            secret-key: secret-key
-            expiration: 86400000
+        open-in-view: false
+    jwt:
+        secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+        jwtExpirationInMs: 86400000

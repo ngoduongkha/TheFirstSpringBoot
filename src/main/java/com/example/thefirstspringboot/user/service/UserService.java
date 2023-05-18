@@ -1,6 +1,6 @@
 package com.example.thefirstspringboot.user.service;
 
-import com.example.thefirstspringboot.auth.dto.RegisterRequestDto;
+import com.example.thefirstspringboot.security.dto.RegisterRequestDto;
 import com.example.thefirstspringboot.user.entity.User;
 
 import java.util.List;

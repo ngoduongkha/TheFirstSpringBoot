@@ -1,6 +1,6 @@
 package com.example.thefirstspringboot.user.service;
 
-import com.example.thefirstspringboot.auth.dto.RegisterRequestDto;
+import com.example.thefirstspringboot.security.dto.RegisterRequestDto;
 import com.example.thefirstspringboot.user.entity.User;
 import com.example.thefirstspringboot.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
     public User createUser(RegisterRequestDto data) {
         User user = new User();
 
-        user.setEmail(data.getEmail());
+        user.setUsername(data.getEmail());
         user.setPassword(passwordEncoder.encode(data.getPassword()));
 
         return repository.save(user);

@@ -1,4 +1,4 @@
-package com.example.thefirstspringboot.auth.dto;
+package com.example.thefirstspringboot.security.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
